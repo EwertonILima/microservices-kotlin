@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: hr-payment
+
+server:
+  port: 8101
