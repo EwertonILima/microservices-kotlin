@@ -1,4 +1,4 @@
-package com.ewertonilima.hrworker.controllers.exceptions
+package com.ewertonilima.hrpayroll.controllers.exceptions
 
 import java.io.Serializable
 import java.time.LocalDateTime

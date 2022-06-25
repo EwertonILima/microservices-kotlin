@@ -2,6 +2,7 @@ package com.ewertonilima.hrpayroll.controllers
 
 import com.ewertonilima.hrpayroll.models.Payment
 import com.ewertonilima.hrpayroll.services.PaymentService
+import com.ewertonilima.hrpayroll.services.implementations.PaymentServiceImpl
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

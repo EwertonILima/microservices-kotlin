@@ -1,6 +1,6 @@
-package com.ewertonilima.hrworker.controllers.exceptions
+package com.ewertonilima.hrpayroll.controllers.exceptions
 
-import com.ewertonilima.hrworker.services.exceptions.ResourceNotFoundException
+import com.ewertonilima.hrpayroll.services.execeptions.ResourceNotFoundException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ControllerAdvice
