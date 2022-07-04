@@ -22,6 +22,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	implementation("org.springframework.cloud:spring-cloud-starter-loadbalancer")
 }
 
 tasks.withType<KotlinCompile> {

@@ -1,6 +1,7 @@
 package com.ewertonilima.hrworker.controllers.exceptions
 
 import com.ewertonilima.hrworker.services.exceptions.ResourceNotFoundException
+import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ControllerAdvice
@@ -11,8 +12,11 @@ import javax.servlet.http.HttpServletRequest
 @ControllerAdvice
 class ResourceExceptionHandler {
 
+    private val logger = LoggerFactory.getLogger(javaClass)
+
     @ExceptionHandler
     fun entityNotFound(e: ResourceNotFoundException, request: HttpServletRequest): ResponseEntity<StandardError> {
+        logger.error(e.message)
         val status = HttpStatus.NOT_FOUND
         val err = StandardError(
                 LocalDateTime.now(),
